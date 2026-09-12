@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GROUP CAM Annaba — Vente & Installation Caméras de Surveillance Dahua</title>
+<meta name="description" content="GROUP CAM Annaba : spécialiste certifié Dahua. Vente, installation et configuration de caméras de surveillance, alarmes et contrôle d'accès. 5.0/5 sur Google, ouvert 7j/7 jusqu'à 23h30.">
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome pour les icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Google Fonts : Poppins (titres) + Inter (texte courant) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#070B14',
+            900: '#0B1220',
+            800: '#111A2E',
+            700: '#1B2A47',
+            600: '#24365C',
+          },
+          steel: '#1E3A8A',
+          alert: '#F97316',
+          dahua: '#DC2626',
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="font-body bg-slate-50 text-navy-900 antialiased">
+
+<!-- ============ HEADER / NAVBAR ============ -->
+<header id="header" class="fixed top-0 left-0 w-full z-50 bg-navy-950/95 backdrop-blur border-b border-white/5 transition-shadow">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex items-center justify-between h-16 md:h-[72px]">
+
+      <!-- Logo -->
+      <a href="#accueil" class="flex items-center gap-2.5 shrink-0">
+        <span class="relative flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-alert to-dahua">
+          <i class="fa-solid fa-video text-white text-sm"></i>
+        </span>
+        <span class="font-display font-bold text-lg text-white leading-none">GROUP <span class="text-alert">CAM</span></span>
+      </a>
+
+      <!-- Navigation desktop -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#accueil" class="hover:text-white transition-colors">Accueil</a>
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#packs" class="hover:text-white transition-colors">Nos Packs</a>
+        <a href="#pourquoi" class="hover:text-white transition-colors">Pourquoi Nous</a>
+        <a href="#avis" class="hover:text-white transition-colors">Avis Clients</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA desktop -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="tel:0660661432" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-alert transition-colors">
+          <i class="fa-solid fa-phone-volume"></i>
+          0660 66 14 32
+        </a>
+        <a href="#contact" class="bg-alert hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-lg shadow-orange-500/20">
+          Devis Gratuit
+        </a>
+      </div>
+
+      <!-- Bouton menu mobile -->
+      <button id="menu-mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false" class="lg:hidden text-white text-xl w-10 h-10 flex items-center justify-center">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="menu-mobile" class="hidden lg:hidden bg-navy-950 border-t border-white/5 px-5 pb-6 pt-2">
+    <nav class="flex flex-col gap-1 text-slate-300 text-sm font-medium">
+      <a href="#accueil" class="menu-mobile-link py-3 border-b border-white/5">Accueil</a>
+      <a href="#services" class="menu-mobile-link py-3 border-b border-white/5">Services</a>
+      <a href="#packs" class="menu-mobile-link py-3 border-b border-white/5">Nos Packs</a>
+      <a href="#pourquoi" class="menu-mobile-link py-3 border-b border-white/5">Pourquoi Nous</a>
+      <a href="#avis" class="menu-mobile-link py-3 border-b border-white/5">Avis Clients</a>
+      <a href="#contact" class="menu-mobile-link py-3">Contact</a>
+    </nav>
+    <div class="flex flex-col gap-3 mt-4">
+      <a href="tel:0660661432" class="flex items-center justify-center gap-2 border border-white/15 text-white text-sm font-semibold px-5 py-3 rounded-lg">
+        <i class="fa-solid fa-phone-volume"></i> Appeler : 0660 66 14 32
+      </a>
+      <a href="#contact" class="bg-alert text-white text-sm font-semibold px-5 py-3 rounded-lg text-center">
+        Devis Gratuit
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="accueil" class="relative bg-navy-950 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <!-- Grille de fond subtile -->
+    <div class="absolute inset-0 bg-grid opacity-[0.07] pointer-events-none"></div>
+    <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-steel/30 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Colonne texte -->
+      <div class="reveal">
+        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6">
+          <div class="flex text-amber-400 text-xs gap-0.5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-xs font-medium text-slate-200">N°1 de la sécurité à Annaba — 5.0/5 sur Google (85+ avis)</span>
+        </div>
+
+        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-[3.2rem] leading-[1.1] text-white mb-6">
+          Protégez ce qui compte le plus avec les caméras Dahua Haute Définition
+        </h1>
+
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+          Vente, installation professionnelle et visionnage à distance sur smartphone pour maisons, commerces et entreprises à Annaba et ses environs.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-alert hover:bg-orange-600 text-white font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-lg shadow-orange-500/25">
+            <i class="fa-solid fa-file-invoice"></i>
+            Demander un Devis Gratuit
+          </a>
+          <a href="https://wa.me/213660661432" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3.5 rounded-lg transition-colors">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            Contact WhatsApp
+          </a>
+        </div>
+
+        <!-- Carte de réassurance -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/10 pt-6">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-certificate text-alert"></i>
+            <span class="text-sm text-slate-300">Matériel Dahua 100% Original</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-screwdriver-wrench text-alert"></i>
+            <span class="text-sm text-slate-300">Installation Pro & Rapide</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-headset text-alert"></i>
+            <span class="text-sm text-slate-300">SAV & Support Dédié</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne visuelle : simulation d'un mur d'écrans de vidéosurveillance -->
+      <div class="reveal reveal-delay">
+        <div class="bg-navy-900 border border-white/10 rounded-2xl p-3 md:p-4 shadow-2xl">
+          <!-- Barre du poste de contrôle -->
+          <div class="flex items-center justify-between px-2 pb-3 mb-3 border-b border-white/10">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+              <span class="text-[11px] font-semibold tracking-wide text-slate-300">REC — POSTE DE CONTRÔLE GROUP CAM</span>
+            </div>
+            <span id="live-clock" class="text-[11px] font-mono text-slate-400">--:--:--</span>
+          </div>
+
+          <!-- Grille de 4 caméras -->
+          <div class="grid grid-cols-2 gap-2.5">
+            <div class="cam-tile">
+              <div class="cam-noise"></div>
+              <div class="motion-box"></div>
+              <span class="cam-label">CAM 01 — ENTRÉE</span>
+            </div>
+            <div class="cam-tile cam-night">
+              <div class="cam-noise"></div>
+              <span class="cam-label">CAM 02 — VISION NOCTURNE</span>
+            </div>
+            <div class="cam-tile">
+              <div class="cam-noise"></div>
+              <span class="cam-label">CAM 03 — DÉPÔT</span>
+            </div>
+            <div class="cam-tile">
+              <div class="cam-noise"></div>
+              <span class="cam-label">CAM 04 — PARKING</span>
+            </div>
+          </div>
+
+          <!-- Bandeau app mobile -->
+          <div class="flex items-center gap-3 mt-3.5 px-3 py-2.5 bg-navy-800 rounded-lg">
+            <i class="fa-solid fa-mobile-screen text-alert"></i>
+            <span class="text-xs text-slate-300">Accès en direct depuis votre smartphone, où que vous soyez.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SECTION POURQUOI CHOISIR GROUP CAM ============ -->
+  <section id="pourquoi" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14 reveal">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-navy-900 mb-4">Pourquoi choisir GROUP CAM ?</h2>
+        <p class="text-slate-600 text-base md:text-lg leading-relaxed">Depuis notre boutique du Boulevard Colonel Amirouche, nous équipons particuliers et entreprises d'Annaba avec un savoir-faire technique reconnu.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="pourquoi-card border-l-4 border-alert reveal">
+          <i class="fa-solid fa-award text-alert text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Spécialiste Dahua</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Matériel officiel, qualité d'image HD/4K et vision nocturne avancée pour une surveillance fiable jour et nuit.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-steel reveal">
+          <i class="fa-solid fa-toolbox text-steel text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Installation Clé en Main</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Câblage propre, réglage précis des angles de vue et configuration mobile offerte à chaque installation.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-alert reveal">
+          <i class="fa-solid fa-tags text-alert text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Prix Compétitifs</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Les meilleurs tarifs de la région à Annaba, avec garantie constructeur sur tout le matériel vendu.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-steel reveal">
+          <i class="fa-solid fa-bolt text-steel text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Intervention & Réactivité</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Une équipe réactive, un service après-vente rapide et un suivi client assuré après chaque installation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION SERVICES ============ -->
+  <section id="services" class="py-20 md:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14 reveal">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-navy-900 mb-4">Nos services</h2>
+        <p class="text-slate-600 text-base md:text-lg leading-relaxed">Un accompagnement complet, de l'achat du matériel jusqu'au suivi après installation.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-camera-cctv"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Vente de matériel Dahua</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Caméras IP/HD, enregistreurs DVR/NVR et kits complets, sélectionnés selon vos besoins réels.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Installation & Câblage</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Résidences, magasins et usines : une installation soignée qui respecte l'esthétique des lieux.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Vision à distance</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Configuration de l'accès direct en direct sur votre téléphone, Android comme iOS.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Alarmes & Contrôle d'accès</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Des solutions de sécurité intégrables à votre système de vidéosurveillance existant.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Livraison & Retrait</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Retrait en magasin ou livraison rapide sur Annaba et ses environs, selon votre préférence.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mb-2">Maintenance & SAV</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Un service après-vente disponible pour tout réglage, dépannage ou extension de votre système.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION PACKS ============ -->
+  <section id="packs" class="py-20 md:py-28 bg-navy-950 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid opacity-[0.05] pointer-events-none"></div>
+    <div class="relative max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14 reveal">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Nos packs & solutions</h2>
+        <p class="text-slate-400 text-base md:text-lg leading-relaxed">Des formules pensées pour chaque type de lieu à protéger. Un tarif précis vous sera proposé après une évaluation rapide sur place.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+
+        <!-- Pack Villa -->
+        <div class="pack-card reveal">
+          <i class="fa-solid fa-house text-alert text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-xl text-white mb-2">Pack Villa / Maison</h3>
+          <p class="text-sm text-slate-400 mb-6">Pour surveiller sereinement votre domicile, à l'intérieur comme à l'extérieur.</p>
+          <ul class="space-y-2.5 mb-8 text-sm text-slate-300">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>2 à 4 caméras HD</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>Enregistreur inclus</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>Configuration mobile</li>
+          </ul>
+          <a href="#contact" class="pack-btn">Demander les tarifs</a>
+        </div>
+
+        <!-- Pack Commerce (mis en avant) -->
+        <div class="pack-card pack-card-highlight reveal">
+          <span class="pack-badge">Le plus demandé</span>
+          <i class="fa-solid fa-store text-white text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-xl text-white mb-2">Pack Commerce / Magasin</h3>
+          <p class="text-sm text-orange-100 mb-6">La solution la plus choisie par les commerçants d'Annaba.</p>
+          <ul class="space-y-2.5 mb-8 text-sm text-white">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check mt-0.5"></i>4 à 8 caméras HD</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check mt-0.5"></i>Vision nocturne avancée</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check mt-0.5"></i>Installation complète</li>
+          </ul>
+          <a href="#contact" class="pack-btn-light">Commander ce pack</a>
+        </div>
+
+        <!-- Pack Entreprise -->
+        <div class="pack-card reveal">
+          <i class="fa-solid fa-industry text-alert text-2xl mb-4"></i>
+          <h3 class="font-display font-semibold text-xl text-white mb-2">Pack Entreprise / Dépôt</h3>
+          <p class="text-sm text-slate-400 mb-6">Une solution sur-mesure pour une couverture intégrale de vos locaux.</p>
+          <ul class="space-y-2.5 mb-8 text-sm text-slate-300">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>Haute définition sur-mesure</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>Couverture intégrale</li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-alert mt-0.5"></i>Maintenance incluse</li>
+          </ul>
+          <a href="#contact" class="pack-btn">Demander les tarifs</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION AVIS CLIENTS ============ -->
+  <section id="avis" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 reveal">
+        <div class="max-w-xl">
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-navy-900 mb-4">Ce que disent nos clients</h2>
+          <p class="text-slate-600 text-base md:text-lg leading-relaxed">La confiance de nos clients, avis après avis.</p>
+        </div>
+        <div class="flex items-center gap-4 bg-slate-50 border border-slate-200 rounded-xl px-5 py-4">
+          <span class="font-display font-bold text-3xl text-navy-900">5.0</span>
+          <div>
+            <div class="flex text-amber-400 text-sm gap-0.5 mb-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-xs text-slate-500">85+ avis Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="avis-card reveal">
+          <div class="flex text-amber-400 text-sm gap-0.5 mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed mb-6">« Une réactivité exemplaire et une qualité de travail irréprochable. C'est un réel plaisir de voir un tel niveau de maîtrise technique. »</p>
+          <div class="flex items-center gap-3">
+            <span class="avis-avatar">S</span>
+            <span class="text-sm font-semibold text-navy-900">Salsabil</span>
+          </div>
+        </div>
+        <div class="avis-card reveal">
+          <div class="flex text-amber-400 text-sm gap-0.5 mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed mb-6">« Excellent service client et des prix très compétitifs. C'est la référence à Annaba ! »</p>
+          <div class="flex items-center gap-3">
+            <span class="avis-avatar">A</span>
+            <span class="text-sm font-semibold text-navy-900">Aya Ben</span>
+          </div>
+        </div>
+        <div class="avis-card reveal">
+          <div class="flex text-amber-400 text-sm gap-0.5 mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed mb-6">« C'est le meilleur magasin de Annaba pour les caméras Dahua, bon prix ! »</p>
+          <div class="flex items-center gap-3">
+            <span class="avis-avatar">B</span>
+            <span class="text-sm font-semibold text-navy-900">Brahim B.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION CONTACT / LOCALISATION ============ -->
+  <section id="contact" class="py-20 md:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14 reveal">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-navy-900 mb-4">Demandez votre devis gratuit</h2>
+        <p class="text-slate-600 text-base md:text-lg leading-relaxed">Décrivez votre projet, notre équipe vous recontacte rapidement avec une proposition adaptée.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8">
+
+        <!-- Formulaire -->
+        <form id="contact-form" novalidate class="lg:col-span-3 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="nom" class="block text-sm font-medium text-navy-900 mb-1.5">Nom complet</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" class="form-input" required>
+              <p class="form-error" data-error-for="nom"></p>
+            </div>
+            <div>
+              <label for="telephone" class="block text-sm font-medium text-navy-900 mb-1.5">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="0X XX XX XX XX" class="form-input" required>
+              <p class="form-error" data-error-for="telephone"></p>
+            </div>
+          </div>
+
+          <div>
+            <label for="projet" class="block text-sm font-medium text-navy-900 mb-1.5">Type de projet</label>
+            <select id="projet" name="projet" class="form-input" required>
+              <option value="" disabled selected>Sélectionnez une option</option>
+              <option value="maison">Maison / Villa</option>
+              <option value="magasin">Magasin / Commerce</option>
+              <option value="entreprise">Entreprise / Dépôt</option>
+              <option value="autre">Autre</option>
+            </select>
+            <p class="form-error" data-error-for="projet"></p>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-navy-900 mb-1.5">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet (nombre de pièces, surface, besoins spécifiques...)" class="form-input resize-none" required></textarea>
+            <p class="form-error" data-error-for="message"></p>
+          </div>
+
+          <button type="submit" class="w-full bg-alert hover:bg-orange-600 text-white font-semibold py-3.5 rounded-lg transition-colors">
+            Envoyer ma demande
+          </button>
+
+          <p id="form-success" class="hidden items-center gap-2 text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg px-4 py-3 text-sm">
+            <i class="fa-solid fa-circle-check"></i>
+            Votre demande a bien été envoyée. Nous vous recontactons très vite !
+          </p>
+        </form>
+
+        <!-- Infos de contact / localisation -->
+        <div class="lg:col-span-2 space-y-5">
+          <div class="bg-navy-950 rounded-2xl p-6 md:p-7 text-white">
+            <h3 class="font-display font-semibold text-lg mb-5">Nos coordonnées</h3>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-alert mt-0.5"></i>
+                <span class="text-slate-300">50 Boulevard Colonel Amirouche, Annaba 23000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-alert mt-0.5"></i>
+                <a href="tel:0660661432" class="text-slate-300 hover:text-white transition-colors">0660 66 14 32</a>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-clock text-alert mt-0.5"></i>
+                <span class="text-slate-300">Ouvert 7j/7, jusqu'à 23h30</span>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-6">
+              <a href="tel:0660661432" class="flex-1 text-center bg-white/10 hover:bg-white/15 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors">
+                <i class="fa-solid fa-phone mr-1.5"></i>Appeler
+              </a>
+              <a href="https://wa.me/213660661432" target="_blank" rel="noopener" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors">
+                <i class="fa-brands fa-whatsapp mr-1.5"></i>WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=50+Boulevard+Colonel+Amirouche+Annaba" target="_blank" rel="noopener" class="block bg-white border border-slate-200 rounded-2xl p-6 hover:border-alert/40 transition-colors group">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-1">Voir l'itinéraire</h4>
+                <p class="text-sm text-slate-500">Ouvrir dans Google Maps</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-alert transition-colors"></i>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-950 border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-alert to-dahua">
+            <i class="fa-solid fa-video text-white text-xs"></i>
+          </span>
+          <span class="font-display font-bold text-white">GROUP <span class="text-alert">CAM</span></span>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">Vente & installation de systèmes de sécurité Dahua à Annaba. Spécialiste certifié, 5.0/5 sur Google.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Liens rapides</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#services" class="hover:text-white transition-colors">Nos services</a></li>
+          <li><a href="#packs" class="hover:text-white transition-colors">Nos packs</a></li>
+          <li><a href="#avis" class="hover:text-white transition-colors">Avis clients</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Devis gratuit</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li>50 Boulevard Colonel Amirouche, Annaba 23000</li>
+          <li><a href="tel:0660661432" class="hover:text-white transition-colors">0660 66 14 32</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Horaires</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li>Ouvert 7j/7</li>
+          <li>Jusqu'à 23h30</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">© <span id="year"></span> GROUP CAM Annaba — Vente & Installation de systèmes de sécurité Dahua. Tous droits réservés.</p>
+      <p class="text-xs text-slate-500">Mentions légales</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
