@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>/* Sens de lecture appliqué avant l'affichage (évite le clignotement FR → AR) */(function(){try{if(localStorage.getItem('groupcam_lang')==='ar'){var d=document.documentElement;d.lang='ar';d.dir='rtl';}}catch(e){}})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title data-i18n="meta.title_why">Pourquoi choisir GROUP CAM ? — GROUP CAM</title>
+<meta name="description" data-i18n-attr="content:meta.desc_why" content="Pourquoi choisir GROUP CAM : spécialiste Dahua, installation clé en main, prix compétitifs, réactivité et accompagnement de A à Z.">
+<meta name="keywords" content="caméra de surveillance, installation CCTV, système d'alarme, contrôle d'accès, Smart Home, vidéosurveillance, caméra Dahua, GROUP CAM">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="GROUP CAM">
+<meta name="theme-color" content="#070B14">
+
+<!-- Open Graph / partage sur les réseaux sociaux et WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_DZ">
+<meta property="og:site_name" content="GROUP CAM">
+<meta property="og:title" content="Pourquoi choisir GROUP CAM ? — GROUP CAM">
+<meta property="og:description" content="Spécialiste Dahua, installation clé en main, prix compétitifs et accompagnement de A à Z.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pourquoi choisir GROUP CAM ?">
+<meta name="twitter:description" content="Spécialiste Dahua, installation clé en main et accompagnement de A à Z.">
+<!--
+  À ajouter une fois le site en ligne (l'URL doit être complète) :
+  <link rel="canonical" href="https://VOTRE-DOMAINE/">
+  <meta property="og:url" content="https://VOTRE-DOMAINE/">
+  <meta property="og:image" content="https://VOTRE-DOMAINE/logo-group-cam.png">
+-->
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome pour les icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Google Fonts : Poppins (titres) + Inter (texte courant) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#070B14',
+            900: '#0B1220',
+            800: '#111A2E',
+            700: '#1B2A47',
+            600: '#24365C',
+          },
+          steel: '#1E3A8A',
+          alert: '#FF3131',
+          alertdark: '#E01E1E',
+          dahua: '#DC2626',
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="font-body bg-slate-50 text-navy-900 antialiased">
+
+<!-- ============ HEADER / NAVBAR ============ -->
+<header id="header" class="fixed top-0 left-0 w-full z-50 bg-navy-950/95 backdrop-blur border-b border-white/5 transition-shadow">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex items-center justify-between h-16 md:h-[72px]">
+
+      <!-- Logo -->
+      <a href="index.html#accueil" class="flex items-center shrink-0" aria-label="GROUP CAM - Accueil" data-i18n-attr="aria-label:attr.logo_link">
+        <img src="logo-group-cam-blanc.png" alt="GROUP CAM - Caméras de surveillance Dahua" data-i18n-attr="alt:attr.logo_alt" class="h-10 md:h-12 w-auto">
+      </a>
+
+      <!-- Navigation desktop -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a data-i18n="nav.1" href="index.html#accueil" class="hover:text-white transition-colors">Accueil</a>
+        <a data-i18n="nav.2" href="index.html#services" class="hover:text-white transition-colors">Services</a>
+        <a data-i18n="nav.3" href="index.html#offres" data-offers-nav hidden class="hover:text-white transition-colors">Offres &amp; Promos</a>
+        <a data-i18n="nav.4" href="pourquoi-nous.html" aria-current="page" class="nav-current">Pourquoi Nous</a>
+        <a data-i18n="nav.5" href="index.html#avis" class="hover:text-white transition-colors">Avis Clients</a>
+        <a data-i18n="nav.6" href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA desktop -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a dir="ltr" href="tel:+213559211315" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-alert transition-colors">
+          <i class="fa-solid fa-phone-volume"></i>
+          +213 559 211 315
+        </a>
+        <button type="button" class="lang-switch" data-lang-switch aria-label="Passer en arabe"><span class="lang-opt is-active" data-lang-opt="fr" lang="fr">FR</span><span class="lang-opt" data-lang-opt="ar" lang="ar">AR</span></button>
+        <a data-i18n="nav.7" href="index.html#contact" class="bg-alert hover:bg-alertdark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-lg shadow-red-500/20">
+          Devis Gratuit
+        </a>
+      </div>
+
+      <!-- Mobile : sélecteur de langue FR / AR toujours visible + bouton menu -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button type="button" class="lang-switch lang-switch--header" data-lang-switch aria-label="Passer en arabe"><span class="lang-opt is-active" data-lang-opt="fr" lang="fr">FR</span><span class="lang-opt" data-lang-opt="ar" lang="ar">AR</span></button>
+        <button id="menu-mobile-toggle" aria-label="Ouvrir le menu" data-i18n-attr="aria-label:attr.menu_open" aria-expanded="false" class="text-white text-xl w-10 h-10 flex items-center justify-center">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="menu-mobile" class="hidden lg:hidden bg-navy-950 border-t border-white/5 px-5 pb-6 pt-2">
+    <nav class="flex flex-col gap-1 text-slate-300 text-sm font-medium">
+      <a data-i18n="nav.1" href="index.html#accueil" class="menu-mobile-link py-3 border-b border-white/5">Accueil</a>
+      <a data-i18n="nav.2" href="index.html#services" class="menu-mobile-link py-3 border-b border-white/5">Services</a>
+      <a data-i18n="nav.3" href="index.html#offres" data-offers-nav hidden class="menu-mobile-link py-3 border-b border-white/5">Offres &amp; Promos</a>
+      <a data-i18n="nav.4" href="pourquoi-nous.html" aria-current="page" class="menu-mobile-link nav-current-mobile py-3 border-b border-white/5">Pourquoi Nous</a>
+      <a data-i18n="nav.5" href="index.html#avis" class="menu-mobile-link py-3 border-b border-white/5">Avis Clients</a>
+      <a data-i18n="nav.6" href="index.html#contact" class="menu-mobile-link py-3">Contact</a>
+    </nav>
+    <div class="flex flex-col gap-3 mt-4">
+      <a data-i18n="nav.8" href="tel:+213559211315" class="flex items-center justify-center gap-2 border border-white/15 text-white text-sm font-semibold px-5 py-3 rounded-lg">
+        <i class="fa-solid fa-phone-volume"></i> Appeler : +213 559 211 315
+      </a>
+      <a data-i18n="nav.7" href="index.html#contact" class="bg-alert text-white text-sm font-semibold px-5 py-3 rounded-lg text-center">
+        Devis Gratuit
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ SECTION POURQUOI CHOISIR GROUP CAM ============ -->
+  <section id="pourquoi" class="pt-32 pb-20 md:pt-44 md:pb-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14 reveal">
+        <h1 data-i18n="why.1" class="font-display font-bold text-3xl md:text-4xl text-navy-900 mb-4">Pourquoi choisir GROUP CAM ?</h1>
+        <p data-i18n="why.2" class="text-slate-600 text-base md:text-lg leading-relaxed">Depuis notre boutique du Boulevard Colonel Amirouche, nous équipons particuliers et entreprises avec un savoir-faire technique reconnu.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="pourquoi-card border-l-4 border-alert reveal">
+          <i class="fa-solid fa-award text-alert text-2xl mb-4"></i>
+          <h3 data-i18n="why.3" class="font-display font-semibold text-lg text-navy-900 mb-2">Spécialiste Dahua</h3>
+          <p data-i18n="why.4" class="text-sm text-slate-600 leading-relaxed">Matériel officiel, qualité d'image HD/4K et vision nocturne avancée pour une surveillance fiable jour et nuit.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-steel reveal">
+          <i class="fa-solid fa-toolbox text-steel text-2xl mb-4"></i>
+          <h3 data-i18n="why.5" class="font-display font-semibold text-lg text-navy-900 mb-2">Installation Clé en Main</h3>
+          <p data-i18n="why.6" class="text-sm text-slate-600 leading-relaxed">Câblage propre, réglage précis des angles de vue et configuration mobile offerte à chaque installation.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-alert reveal">
+          <i class="fa-solid fa-tags text-alert text-2xl mb-4"></i>
+          <h3 data-i18n="why.7" class="font-display font-semibold text-lg text-navy-900 mb-2">Prix Compétitifs</h3>
+          <p data-i18n="why.8" class="text-sm text-slate-600 leading-relaxed">Les meilleurs tarifs, avec garantie constructeur sur tout le matériel vendu.</p>
+        </div>
+        <div class="pourquoi-card border-l-4 border-steel reveal">
+          <i class="fa-solid fa-bolt text-steel text-2xl mb-4"></i>
+          <h3 data-i18n="why.9" class="font-display font-semibold text-lg text-navy-900 mb-2">Intervention & Réactivité</h3>
+          <p data-i18n="why.10" class="text-sm text-slate-600 leading-relaxed">Une équipe réactive, un service après-vente rapide et un suivi client assuré après chaque installation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOC UN ACCOMPAGNEMENT DE A À Z ============ -->
+  <section id="accompagnement" class="py-20 md:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-10 reveal">
+        <h2 data-i18n="services.36" class="font-display font-bold text-3xl md:text-4xl text-navy-900">Un accompagnement de A à Z</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3 data-i18n="services.37" class="font-display font-semibold text-lg text-navy-900 mb-2">Vente de matériel Dahua</h3>
+          <p data-i18n="services.38" class="text-sm text-slate-600 leading-relaxed">Caméras IP/HD, enregistreurs DVR/NVR et kits complets, sélectionnés selon vos besoins réels.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3 data-i18n="services.39" class="font-display font-semibold text-lg text-navy-900 mb-2">Livraison & Retrait</h3>
+          <p data-i18n="services.40" class="text-sm text-slate-600 leading-relaxed">Retrait en magasin ou livraison rapide, selon votre préférence.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3 data-i18n="services.41" class="font-display font-semibold text-lg text-navy-900 mb-2">Maintenance & SAV</h3>
+          <p data-i18n="services.42" class="text-sm text-slate-600 leading-relaxed">Un service après-vente disponible pour tout réglage, dépannage ou extension de votre système.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-950 border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+
+      <div>
+        <div class="mb-4">
+          <img src="logo-group-cam-blanc.png" alt="GROUP CAM - Caméras de surveillance Dahua" data-i18n-attr="alt:attr.logo_alt" class="h-11 w-auto">
+        </div>
+        <p data-i18n="footer.1" class="text-sm text-slate-400 leading-relaxed">Vente & installation de systèmes de sécurité Dahua. Spécialiste certifié, 5.0/5 sur Google.</p>
+        <p data-i18n="footer.20" class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-6 mb-3">Suivez-nous</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1Fg2xigV9T/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--fb" aria-label="GROUP CAM sur Facebook" data-i18n-attr="aria-label:attr.social_fb"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/group___cam?knvt=MW9mcGQ2eTQ1Y3pjZg%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--ig" aria-label="GROUP CAM sur Instagram" data-i18n-attr="aria-label:attr.social_ig"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.2" class="text-white font-semibold text-sm mb-4">Liens rapides</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a data-i18n="services.1" href="index.html#services" class="hover:text-white transition-colors">Nos services</a></li>
+          <li data-offers-nav hidden><a data-i18n="footer.3" href="index.html#offres" class="hover:text-white transition-colors">Offres &amp; promos</a></li>
+          <li><a data-i18n="nav.4" href="pourquoi-nous.html" aria-current="page" class="text-white">Pourquoi Nous</a></li>
+          <li><a data-i18n="footer.4" href="index.html#avis" class="hover:text-white transition-colors">Avis clients</a></li>
+          <li><a data-i18n="footer.5" href="index.html#contact" class="hover:text-white transition-colors">Devis gratuit</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-i18n="nav.6" class="text-white font-semibold text-sm mb-4">Contact</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li data-i18n="contact.23">50 Boulevard Colonel Amirouche, Annaba 23000</li>
+          <li><span data-i18n="footer.6" class="text-slate-500">Commercial :</span> <a dir="ltr" href="tel:+213559211315" class="hover:text-white transition-colors">+213 559 211 315</a> · <a dir="ltr" href="tel:+213783839004" class="hover:text-white transition-colors">+213 783 839 004</a></li>
+          <li><span data-i18n="footer.7" class="text-slate-500">Technique :</span> <a dir="ltr" href="tel:+213660661432" class="hover:text-white transition-colors">+213 660 661 432</a></li>
+          <li><span data-i18n="footer.8" class="text-slate-500">Fixe :</span> <a dir="ltr" href="tel:+21339522201" class="hover:text-white transition-colors">039 522 201</a></li>
+          <li><a data-i18n="footer.9" href="https://www.google.com/maps/search/?api=1&amp;query=GROUP+CAM+WP3W%2BVH+Annaba" target="_blank" rel="noopener" class="hover:text-white transition-colors"><i class="fa-brands fa-google mr-1.5 text-alert"></i>Avis Google</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.10" class="text-white font-semibold text-sm mb-4">Horaires</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li data-i18n="footer.11">Ouvert 7j/7</li>
+          <li data-i18n="footer.12">Jusqu'à 23h30</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">© <span id="year"></span> <span data-i18n="footer.13">GROUP CAM — Vente & Installation de systèmes de sécurité Dahua. Tous droits réservés.</span></p>
+      <nav class="flex items-center gap-4 text-xs text-slate-500" aria-label="Informations légales" data-i18n-attr="aria-label:attr.legal_nav">
+        <a data-i18n="footer.14" href="mentions-legales.html" class="hover:text-slate-300 transition-colors">Mentions légales</a>
+        <span aria-hidden="true">·</span>
+        <a data-i18n="footer.15" href="politique-confidentialite.html" class="hover:text-slate-300 transition-colors">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOUTON WHATSAPP FLOTTANT ============ -->
+<a href="https://wa.me/213660661432" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Discuter avec GROUP CAM sur WhatsApp" data-i18n-attr="aria-label:attr.wa_float">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  <span data-i18n="footer.16" class="whatsapp-tip">Discuter sur WhatsApp</span>
+</a>
+
+<!-- ============ BANDEAU DE CONSENTEMENT AUX COOKIES ============ -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Consentement aux cookies" data-i18n-attr="aria-label:attr.cookie_region" hidden>
+  <div class="cookie-inner">
+    <p data-i18n="footer.17" class="cookie-text">
+      Nous utilisons des cookies pour optimiser votre expérience sur notre site. En poursuivant votre navigation, vous acceptez notre utilisation des cookies.
+    </p>
+    <div class="cookie-actions">
+      <a data-i18n="footer.18" href="politique-confidentialite.html" class="cookie-link">En savoir plus</a>
+      <button data-i18n="footer.19" type="button" id="cookie-accept" class="cookie-btn">Accepter</button>
+    </div>
+  </div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
